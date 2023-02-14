@@ -1,10 +1,15 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 /* all resets */
 :root {
   --white: #ffe;
-  --light: #ccc;
+  --light: #eee;
   --grey: #555;
   --dark: #333;
   --black: #111;
+  --black-translucent: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -12,10 +17,8 @@
   padding: 0px;
   -webkit-font-smoothing: antialiased;
   /* border: red solid 1px; */
-}
-
-a {
-  all: unset;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* body */
@@ -29,33 +32,91 @@ body {
 }
 
 .planet-icon {
-  max-width: 76px;
+  max-width: 48px;
+}
+
+.body-container {
+  display: flex;
+  height: 100%;
+}
+
+/* aside */
+
+.aside-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(./img/milky-way.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aside-logo {
+  background-color: var(--black-translucent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  margin-top: 100px;
+}
+
+.aside-logo h1 {
+  color: var(--light);
+  font-size: 32px;
+  font-family: "Great Vibes";
+  margin-bottom: -6px;
+}
+
+.aside-credits {
+}
+
+.aside-credits p,
+.aside-credits a {
+  font-size: 10px;
+  color: var(--white);
+  font-weight: 200px;
+  color: var(--light);
+  text-align: center;
+  padding: 4px 0;
+}
+
+/* main container */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--black);
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
   color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 16px;
+  height: 32px;
+  display: relative;
+}
+
+.footer p {
+  font-size: 12px;
 }
 
 .footer a {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .social-icon {
-  max-width: 16px;
+  max-width: 14px;
   margin-bottom: 0;
   padding-bottom: 0;
   margin: auto 0;
-}
-
-.social-icon:hover {
-
+  display: absolute;
 }

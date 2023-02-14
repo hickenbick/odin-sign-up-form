@@ -13,16 +13,24 @@
 <body>
 
   <!-- top page container -->
-  <div>
+  <div class="body-container">
 
     <!-- aside -->
-    <aside>
-      <img class="planet-icon" src="./img/planet-icon.svg" alt="">
-      <h1>Dark Sky</h1>
+    <aside class="aside-container">
+
+      <div class="aside-logo">
+        <img class="planet-icon" src="./img/planet-icon.svg" alt="">
+        <h1>Dark Sky</h1>
+      </div>
+
+      <div class="aside-credits">
+        <p>Photo by <a href="">*NAME*</a> on <a href="">Unsplash</a></p>
+      </div>
+
     </aside>
 
     <!-- main content -->
-    <main>
+    <main class="main-container">
 
       <!-- intro -->
       <div>
@@ -32,7 +40,7 @@
       </div>
 
       <!-- form container -->
-      <div>
+      <div class="form-container">
         <h2>Let's do this!</h2>
         <div>
           <label for="first-name">First Name</label>
@@ -48,22 +56,23 @@
         </div>
         <div>
           <label for="phone-number">Phone number</label>
-          <input type="text" id="phone-number" name="phone-number" </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-          </div>
-          <div>
-            <label for="confirm password">Confirm password</label>
-            <input type="password" id="confirm-password" name="confirm-password">
-          </div>
+          <input type="text" id="phone-number" name="phone-number">
         </div>
-
-        <!-- button container -->
         <div>
-          <button>Create Account</button>
-          <p>already have an account? <a href="">Log in</a></p>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
         </div>
+        <div>
+          <label for="confirm password">Confirm password</label>
+          <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+      </div>
+
+      <!-- button container -->
+      <div>
+        <button>Create Account</button>
+        <p>already have an account? <a href="">Log in</a></p>
+      </div>
     </main>
   </div>
 
@@ -71,9 +80,14 @@
   <footer class="footer">
     <p>Code by Rodrigo Hickenbick</p>
     <p>|</p>
-    <a href=""><img class="social-icon" src="./img/github-icon.svg" alt="Github"></a>
-    <a href=""><img class="social-icon" src="./img/linkedin-icon.svg" alt="Linkedin"></a>
+    <a href="https://github.com/hickenbick" target="blank">
+      <img class="social-icon" src="./img/github-icon.svg" alt="Github" target="_blank">
+    </a>
+    <a href="https://www.linkedin.com/in/rodrigo-hickenbick/" target="blank">
+      <img class="social-icon" src="./img/linkedin-icon.svg" alt="Linkedin" target="blank">
+    </a>
   </footer>
+
 
   <script src="./script.js"></script>
 </body>
