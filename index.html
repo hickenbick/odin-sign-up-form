@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-  <h1>Favicon Project</h1>
+
+  <!-- top page container -->
+  <div>
+
+    <!-- aside -->
+    <aside>
+      <img class="planet-icon" src="./img/planet-icon.svg" alt="">
+      <h1>Dark Sky</h1>
+    </aside>
+
+    <!-- main content -->
+    <main>
+
+      <!-- intro -->
+      <div>
+        <p>his is not a real online service! You know you need something like this in your life to help you realize tour deepest dreams.</p>
+        <p>Sign up <span>now</span> to get started.</p>
+        You <span>know</span> you want to.
+      </div>
+
+      <!-- form container -->
+      <div>
+        <h2>Let's do this!</h2>
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="firstname" placeholder="Thor">
+        </div>
+        <div>
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="lastname" placeholder="Odinson">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="phone-number">Phone number</label>
+          <input type="text" id="phone-number" name="phone-number" </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div>
+            <label for="confirm password">Confirm password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+        </div>
+
+        <!-- button container -->
+        <div>
+          <button>Create Account</button>
+          <p>already have an account? <a href="">Log in</a></p>
+        </div>
+    </main>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p>Code by Rodrigo Hickenbick</p>
+    <p>|</p>
+    <a href=""><img class="social-icon" src="./img/github-icon.svg" alt="Github"></a>
+    <a href=""><img class="social-icon" src="./img/linkedin-icon.svg" alt="Linkedin"></a>
+  </footer>
+
   <script src="./script.js"></script>
 </body>
+
 </html>
