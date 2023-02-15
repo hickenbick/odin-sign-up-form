@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;500;700&display=swap");
 
 /* all resets */
 :root {
@@ -10,8 +10,8 @@
   --dark: #333;
   --black: #111;
   --black-translucent: rgba(0, 0, 0, 0.7);
-  --blue: #0000CD;
-  --darkBlue: #00008B;
+  --blue: #0000cd;
+  --darkBlue: #00008b;
   --red: #e60000;
 }
 
@@ -19,7 +19,7 @@
   margin: 0px;
   padding: 0px;
   -webkit-font-smoothing: antialiased;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -100,7 +100,7 @@ body {
   width: auto;
 }
 
-.main-container > div{
+.main-container > div {
   padding: 24px 0px 16px 32px;
 }
 
@@ -122,7 +122,7 @@ body {
 
 .form-container {
   background-color: var(--white);
-  box-shadow: rgba(0, 0, 0, .1) 0px 6px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px -2px;
 }
 
 .form-container > * {
@@ -140,9 +140,9 @@ body {
   display: block;
   font-size: 8px;
   font-weight: bold;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  font-family: "roboto" 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "roboto" "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 2;
 }
 
@@ -154,7 +154,7 @@ body {
   min-width: 150px;
   color: var(--black);
   font-weight: 500;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-container > div > input:focus {
@@ -168,8 +168,8 @@ body {
 }
 
 #password-red {
-    border: 1.2px solid var(--red);
-    outline: none;
+  border: 1.2px solid var(--red);
+  outline: none;
 }
 
 .err-msg {
@@ -210,8 +210,6 @@ body {
   text-decoration: none;
   color: var(--blue);
 }
-
-
 
 /* footer */
 
